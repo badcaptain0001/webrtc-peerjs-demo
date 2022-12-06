@@ -25,7 +25,7 @@ const myPeer = new Peer().on('open', (socketID) =>
 socket.on('user-disconnected', (socketID) => peers[socketID].close());
 
 navigator.mediaDevices
-    .getUserMedia({ video: true, audio: false })
+    .getUserMedia({ video: true, audio: true })
     .then((myStream) => {
         // create your Video
 
